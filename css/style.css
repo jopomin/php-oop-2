@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+.main_container {
+    margin: 0 auto;
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#users {
+    height : 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user_card {
+    background: #ddd;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 350px;
+    margin-right: 20px;
+}
+
+.user_card:last-child {
+    margin-right: 0;
+}
+
+.user_pic {
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.user_pic img {
+    height: 100%;
+}
+
+.user_full_name {
+    font-size: 30px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.username {
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+    font-style: italic;
+}
+
+/* HOVER */
+
+.user_card:hover {
+    cursor: pointer;
+    background: lightblue;
+}
+
+/* ACTIVE */
+
+.user_card:active {
+    cursor: pointer;
+    background: lightsalmon;
+}
